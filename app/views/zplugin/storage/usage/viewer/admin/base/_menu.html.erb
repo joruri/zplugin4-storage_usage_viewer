@@ -1,0 +1,7 @@
+<ul class="sys-navi__main-menu">
+  <%= render 'layouts/admin/cms/menu', current: nil %>
+</ul>
+
+<ul class="sys-navi__content-menu">
+  <%= content_tag('li') { link_to '使用量', { controller: :usages }, class: content_menu_class(controller_name == 'usages') } %>
+</ul>

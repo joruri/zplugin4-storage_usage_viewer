@@ -1,0 +1,16 @@
+<%= form_with model: @criteria, scope: :criteria, url: { action: :index }, method: :get, class: 'cms-search' do |f| %>
+  <table>
+    <tr>
+      <th>サイト名</th>
+    </tr>
+    <tr>
+      <td><%= f.text_field :site_name, style: 'width: 200px;' %></td>
+      <td class="cms-search__submitters">
+        <%= f.submit :search, data: { disable_with: false } %>
+        <%= f.submit :reset, data: { disable_with: false } %>
+        <span class="cms-search__separator">|</span>
+        <%= f.submit :csv, data: { confirm: "CSVを出力します。\n件数が多いと処理に時間がかかることがあります。", disable_with: false } %>
+      </td>
+    </tr>
+  </table>
+<% end %>

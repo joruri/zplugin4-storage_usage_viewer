@@ -1,0 +1,24 @@
+<%= render 'search' %>
+
+<table class="cms-list" data-controller="basic-list">
+  <thead>
+    <tr>
+      <th style="width: 60px;">ID</th>
+      <th style="">サイト名</th>
+      <th style="width: 120px;"><%= Zplugin::Storage::Usage::Viewer::Usage.human_attribute_name :size %></th>
+      <th style="width: 120px;"><%= Zplugin::Storage::Usage::Viewer::Usage.human_attribute_name :updated_at %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%- @items.each do |item| -%>
+      <tr>
+        <td style="text-align: right;"><%= item.site_id %></td>
+        <td style="text-align: left;"><%= item.site.name %></td>
+        <td style="text-align: left;"><%= item.eng_unit %></td>
+        <td style="text-align: center;"><%=l item.updated_at %></td>
+      </tr>
+    <%- end -%>
+  </tbody>
+</table>
+
+<%= paginate @items %>
