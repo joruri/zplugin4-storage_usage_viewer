@@ -12,8 +12,8 @@
   <tbody>
     <%- @items.each do |item| -%>
       <tr>
-        <td style="text-align: right;"><%= item.site_id %></td>
-        <td style="text-align: left;"><%= item.site.name %></td>
+        <td style="text-align: right;"><%= item.site&.id %></td>
+        <td style="text-align: left;"><%= item.site&.name %></td>
         <td style="text-align: left;"><%= item.eng_unit %></td>
         <td style="text-align: center;"><%=l item.updated_at %></td>
       </tr>
