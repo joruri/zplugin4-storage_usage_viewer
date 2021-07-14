@@ -1,5 +1,5 @@
 class Zplugin::StorageUsageViewer::Export::UsagesInteractor < ApplicationInteractor
-  before do
+  before_call do
     @items = @context.items
   end
 
