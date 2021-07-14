@@ -1,4 +1,4 @@
-Zplugin::Storage::Usage::Viewer::Engine.routes.draw do
+Zplugin::StorageUsageViewer::Engine.routes.draw do
   root 'admin/usages#index'
 
   scope module: 'admin' do

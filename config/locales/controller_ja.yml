@@ -1,4 +1,4 @@
 ja:
   service:
     paths:
-      zplugin/storage/usage/viewer/navi/usages: ストレージ使用量
+      zplugin/storage_usage_viewer/navi/usages: ストレージ使用量

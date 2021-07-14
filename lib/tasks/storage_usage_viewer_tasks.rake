@@ -3,7 +3,7 @@ namespace Zomeki::NAME do
     namespace :usages do
       desc 'Check storage usages'
       task check: [:environment] do
-        Zplugin::Storage::Usage::Viewer::CheckJob.perform_later
+        Zplugin::StorageUsageViewer::CheckJob.perform_later
       end
     end
   end

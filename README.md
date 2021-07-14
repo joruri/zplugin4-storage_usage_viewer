@@ -1,10 +1,10 @@
-# Zplugin::Storage::Usage::Viewer
+# Zplugin::StorageUsageViewer
 
 サイトごとのストレージ使用量確認画面を追加するプラグインです。
 
 ## 想定環境
 
-| zplugin-storage-usage-viewer | zomeki | joruri |
+| zplugin-storage_usage_viewer | zomeki | joruri |
 | ---- | ---- | ---- |
 | 2.0 | - | 2020 Release 1 |
 

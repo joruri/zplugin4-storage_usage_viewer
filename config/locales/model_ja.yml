@@ -1,10 +1,10 @@
 ja:
   activerecord:
     models:
-      zplugin/storage/usage/viewer/usage: サーバー使用量
+      zplugin/storage_usage_viewer/usage: サーバー使用量
 
     attributes:
-      zplugin/storage/usage/viewer/usage:
+      zplugin/storage_usage_viewer/usage:
         site_id: サイトID
         size: 使用量
         created_at: 作成日時
