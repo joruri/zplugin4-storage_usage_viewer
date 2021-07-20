@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Zplugin::StorageUsageViewer::VERSION
   s.authors     = ["SiteBridge Inc."]
   s.email       = ["info@sitebridge.co.jp"]
-  s.homepage    = "https://github.com/zomeki/zplugin4-storage_usage_viewer"
+  s.homepage    = "https://github.com/joruri/zplugin4-storage_usage_viewer"
   s.summary     = "View site storage usage."
   s.description = "View site storage usage."
   s.license     = "MIT"
