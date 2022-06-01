@@ -5,7 +5,7 @@ class Zplugin::StorageUsageViewer::CheckJob < ApplicationJob
     st = DateTime.now
 
     Cms::Site.all.each do |site|
-      command = "du -s #{site.root_path}"
+      command = "du -sb #{site.root_path}"
       stdout, stderr, status = Open3.capture3(command)
 
       item = Zplugin::StorageUsageViewer::Usage.where(site_id: site.id).first_or_initialize
