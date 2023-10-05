@@ -1,3 +1,3 @@
 class Zplugin::StorageUsageViewer::UsagePolicy < ApplicationPolicy
-  chain Sys::Chain::RootPolicy
+  coact Sys::Coactors::RootPolicy
 end
