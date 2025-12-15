@@ -6,7 +6,7 @@
 
 | zplugin-storage_usage_viewer | zomeki | joruri |
 | ---- | ---- | ---- |
-| 2.0 | - | 2020 Release 3 |
+| 3.0 | - | 2020 Release 4 |
 
 ## インストール
 

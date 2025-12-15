@@ -29,7 +29,7 @@ module Zplugin
         end
 
         def installed?
-          context = ActiveRecord::MigrationContext.new(config.paths['db/migrate'].to_a, ActiveRecord::SchemaMigration)
+          context = ActiveRecord::MigrationContext.new(config.paths['db/migrate'].to_a)
           !context.needs_migration?
         end
       end
