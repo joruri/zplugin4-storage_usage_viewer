@@ -1,11 +1,10 @@
 class Zplugin::StorageUsageViewer::Export::UsagesInteractor < ApplicationInteractor
-  before_call do
-    @items = @context.items
-  end
+  context :items, required: true
+  context :result, output: true
 
   def call
     require 'csv'
-    @context.result = CSV.generate do |csv|
+    @result = CSV.generate do |csv|
       csv << [
         "ID",
         "サイト名",
